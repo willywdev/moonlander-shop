@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Geist";
+  src: url(./GeistVariableVF.woff2);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Geist", Arial, Helvetica, sans-serif;
+  background-color: #202020;
+  color: #fafafa;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgreen;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: #fafafa;
+    color: #202020;
+  }
+}

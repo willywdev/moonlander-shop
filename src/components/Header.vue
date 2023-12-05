@@ -22,12 +22,16 @@ import { Icon } from "@iconify/vue";
 
 <style scoped>
 header {
-  background: rgb(70, 70, 70);
+  background: rgb(47, 46, 46);
   height: 5rem;
   border-bottom: 1px solid rgb(80, 80, 80);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem 0 2rem;
+  opacity: 0.7;
+}
+header:hover {
+  opacity: 1;
 }
 </style>

@@ -16,5 +16,9 @@ article {
   background: linear-gradient(rgb(252, 251, 121) 0%, rgb(246, 241, 95) 100%);
   color: #202020;
   gap: 2px;
+  opacity: 0.5;
+}
+article:hover {
+  opacity: 1;
 }
 </style>

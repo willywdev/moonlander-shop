@@ -4,19 +4,22 @@ import { Icon } from "@iconify/vue";
 
 <template>
   <header>
-    <nav>
-      <Icon icon="mdi:cart" width="42" aria-label="Cart" />
-    </nav>
-    <div aria-label="Headline & Logo">
-      <a href="/">
-        <h1>Moonlander Shop</h1>
-      </a>
-    </div>
     <div aria-label="Socials">
       <a href="https://github.com/willywdev" target="_blank"
         ><Icon icon="mdi:github" width="42" aria-label="Github"
       /></a>
     </div>
+    <div aria-label="Headline & Logo">
+      <a href="/">
+        <h1>Moonlander Shop</h1>
+      </a>
+    </div>
+
+    <nav>
+      <a href="/">
+        <Icon icon="mdi:cart" width="42" aria-label="Cart" />
+      </a>
+    </nav>
   </header>
 </template>
 

@@ -1,5 +1,9 @@
 <script setup>
 import ColorSwitch from "@/components/ColorSwitch.vue";
+const colors = {
+  colorOptionOne: { color: "#202020", name: "Black" },
+  colorOptionTwo: { color: "#fafafa", name: "White" },
+};
 </script>
 
 <template>
@@ -11,7 +15,9 @@ import ColorSwitch from "@/components/ColorSwitch.vue";
         <img src="../assets/heroes/hero_light.avif" alt="ZSA Moonlander" />
       </div>
     </article>
-    <ColorSwitch />
+    <ColorSwitch
+      v-bind:colorOptionOne="colors.colorOptionOne"
+      v-bind:colorOptionTwo="colors.colorOptionTwo" />
   </main>
 </template>
 

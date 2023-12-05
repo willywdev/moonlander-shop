@@ -1,20 +1,29 @@
-<script setup></script>
+<script setup>
+const props = defineProps({
+  colorOptionOne: Object,
+  colorOptionTwo: Object,
+});
+</script>
+
 <template>
   <section aria-label="Select color:">
     <h3>Color:</h3>
     <hr />
     <article>
       <div>
-        <button></button>
-        <p>Color 1</p>
+        <button
+          :style="{ backgroundColor: props.colorOptionOne.color }"></button>
+        <p>{{ props.colorOptionOne.name }}</p>
       </div>
       <div>
-        <button></button>
-        <p>Color 2</p>
+        <button
+          :style="{ backgroundColor: props.colorOptionTwo.color }"></button>
+        <p>{{ props.colorOptionTwo.name }}</p>
       </div>
     </article>
   </section>
 </template>
+
 <style scoped>
 section {
   display: flex;
@@ -30,22 +39,22 @@ article {
 }
 
 button {
-  background: rgba(255, 255, 255, 0.1);
   border: none;
   padding: 2rem;
   border-radius: 50%;
   outline: 1px solid gray;
   cursor: pointer;
+  opacity: 0.5;
 }
 
 button:hover {
-  background: rgba(255, 255, 255, 0.2);
   outline: 1px solid white;
   transition: background 0.5s ease-in-out;
+  opacity: 1;
 }
 
 hr {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   width: 75%;
 }
 
